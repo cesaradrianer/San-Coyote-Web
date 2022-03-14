@@ -1,0 +1,309 @@
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  font-family: "Work Sans";
+}
+
+h1 {
+  margin-top: 60px;
+  font-size: 60px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 5px;
+  opacity: 65%;
+}
+
+h2 {
+  color: white;
+  font-weight: 400;
+  letter-spacing: 5px;
+  opacity: 65%;
+}
+
+/*Estilos de la página principal*/
+
+#right {
+  width: 50vw;
+  text-align: center;
+}
+
+#left {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes sclogo_fade_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#sclogo {
+  max-width: 40%;
+  animation-name: sclogo_fade_in;
+  animation-duration: 6s;
+}
+
+.links {
+  padding: 0;
+  margin-top: 40px;
+}
+
+.link {
+  font-size: 2.5vw;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    flex-direction: column;
+  }
+
+  #sclogo {
+    max-width: 100%;
+  }
+
+  #right {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .link {
+    font-size: 4vh;
+  }
+}
+
+.link a {
+  color: white;
+  list-style: none;
+  opacity: 50%;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+
+.link a:hover {
+  transition: opacity 1s;
+  transition: font-size 0.2s;
+  font-size: larger;
+  opacity: 100%;
+  cursor: pointer;
+  text-shadow: 2px 2px 30px white;
+}
+
+/*Estilos de la página de Música*/
+
+main {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 40px;
+  text-align: center;
+}
+
+.album_art {
+  max-width: 800px;
+}
+
+.img_link {
+  max-width: 50px;
+  filter: invert(100%);
+}
+
+@media screen and (width: 5120px) {
+  .album_art {
+    max-width: 1050px;
+  }
+
+  .img_link {
+    max-width: 110px;
+  }
+
+  main {
+    column-gap: 100px;
+  }
+}
+
+@media screen and (width: 3840px) {
+  .album_art {
+    max-width: 1050px;
+  }
+
+  .img_link {
+    max-width: 100px;
+  }
+
+  main {
+    column-gap: 100px;
+  }
+}
+
+@media screen and (width: 3340px) {
+  .album_art {
+    max-width: 1000px;
+  }
+
+  .img_link {
+    max-width: 100px;
+  }
+
+  main {
+    column-gap: 100px;
+  }
+}
+
+@media screen and (width: 2560px) {
+  main {
+    column-gap: 100px;
+  }
+}
+
+@media screen and (width: 1920px) {
+  .album_art {
+    max-width: 600px;
+  }
+}
+
+@media screen and (width: 1600px) {
+  .album_art {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .album_art {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .album_art {
+    max-width: 300px;
+  }
+
+  .img_link {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .album_art {
+    max-width: 200px;
+  }
+
+  .img_link {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  main {
+    grid-template-columns: none;
+    grid-template-rows: 50% 50%;
+    row-gap: 40px;
+  }
+}
+
+.link2 a {
+  font-size: 2.2vh;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  letter-spacing: 1px;
+  opacity: 50%;
+  transition: opacity 0.5s;
+}
+
+.link2 a:hover {
+  opacity: 100%;
+}
+
+.album_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: center;
+  max-width: 1200px;
+  padding: 30px;
+  border: 1px solid rgb(104, 104, 104);
+  border-radius: 10px;
+}
+
+.links2 {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  width: 60%;
+  justify-content: space-around;
+}
+
+.links_wrapper {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.back_link {
+  margin-top: 30px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 8px;
+  font-size: 2.5vw;
+  font-weight: 300;
+  margin-bottom: 12px;
+  opacity: 50%;
+  transition: opacity 0.5s;
+}
+
+.back_link:hover {
+  opacity: 100%;
+}
+
+/*Estilos de la página de la biografía*/
+
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#scphoto1 {
+  max-height: 700px;
+  margin: 20px;
+}
+
+.text {
+  color: white;
+  font-size: 1vw;
+  opacity: 60%;
+}
+
+.text_wrapper {
+  padding: 18px;
+  margin-top: 140px;
+  width: 400px;
+}
+
+/*Estilos de la página de contacto*/
+
+#contact_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
