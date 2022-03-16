@@ -20,9 +20,16 @@ h1 {
 
 h2 {
   color: white;
+  font-size: 33px;
   font-weight: 400;
   letter-spacing: 5px;
   opacity: 65%;
+}
+
+hr {
+  width: 100%;
+  opacity: 75%;
+  box-shadow: 1px 1px 10px white;
 }
 
 /*Estilos de la página principal*/
@@ -302,8 +309,50 @@ main {
 
 /*Estilos de la página de contacto*/
 
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+
 #contact_info {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+}
+
+.category h1:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+#social_media_links {
+  display: none;
+}
+
+#email {
+  display: none;
+}
+
+#social_media_links:target {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 20px;
+  border-left: 1px solid white;
+  padding-left: 40px;
+}
+
+#email:target {
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  margin-left: 40px;
+  border-left: 1px solid white;
+  padding-left: 40px;
 }
