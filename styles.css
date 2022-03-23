@@ -47,6 +47,10 @@ hr {
   align-items: center;
 }
 
+#arrow {
+  display: none;
+}
+
 @keyframes sclogo_fade_in {
   from {
     opacity: 0;
@@ -76,6 +80,7 @@ hr {
 @media screen and (max-width: 425px) {
   body {
     flex-direction: column;
+    justify-content: center;
   }
 
   #sclogo {
@@ -87,6 +92,29 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #arrow_link {
+    text-decoration: none;
+    color: white;
+  }
+
+  #arrow {
+    display: block;
+    color: white;
+    margin-top: 50px;
+  }
+
+  #arrow a {
+    width: 20px;
+  }
+
+  #left {
+    display: none;
+  }
+
+  #left:target {
+    display: flex;
   }
 
   .link {
