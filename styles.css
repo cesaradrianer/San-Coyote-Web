@@ -325,7 +325,7 @@ main {
 
 .text {
   color: white;
-  font-size: 1vw;
+  font-size: 4vw;
   opacity: 60%;
 }
 
@@ -333,6 +333,42 @@ main {
   padding: 18px;
   margin-top: 140px;
   width: 400px;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    align-items: center;
+    height: auto;
+    width: 100%;
+    max-width: 425px;
+  }
+
+  #content {
+    flex-direction: column;
+    width: 100%;
+    max-width: 425px;
+  }
+
+  #scphoto1 {
+    max-height: none;
+    max-width: 380px;
+  }
+
+  .text_wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 425px;
+  }
+
+  .text {
+    margin: 10px;
+  }
+
+  .back_link {
+    font-size: 5vw;
+    margin-left: 10px;
+  }
 }
 
 /*Estilos de la página de contacto*/
