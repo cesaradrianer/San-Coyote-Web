@@ -148,9 +148,9 @@ hr {
 }
 
 /*Estilos de la página de Música*/
-
 main {
   width: 70%;
+
   display: grid;
   grid-template-columns: 50% 50%;
   column-gap: 40px;
@@ -510,10 +510,6 @@ a {
 }
 
 @media screen and (max-width: 425px) {
-  body {
-    height: 100vh;
-  }
-
   #contact_info {
     display: none;
   }
