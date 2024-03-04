@@ -112,3 +112,11 @@ img {
     animation-name: sclogo_fade_in;
     animation-duration: 6s;
   }
+
+  @media only screen and (max-width: 1366px)  {
+
+    #logo-container {
+        max-width: 350px;
+    }
+    
+  }
