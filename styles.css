@@ -116,6 +116,11 @@ img {
     max-width: 100%;
 }
 
+#toggle-link:hover {
+    cursor: pointer;
+    color: var(--primary-color)
+}
+
 @keyframes sclogo_fade_in {
     from {
       opacity: 0;
